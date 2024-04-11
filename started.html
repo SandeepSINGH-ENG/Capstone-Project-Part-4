@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inika&family=Irish+Grover&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/fav.png">
+</head>
+
+<body>
+
+    <main>
+      <div id="preStart">
+        <form id="preForm">
+          <div id="step1">
+              <div class="quizBody">
+                  <div class="quiz-start">
+                      <h1>Let’s start</h1>
+
+                      <div class="input-binder">
+                          <input type="text" placeholder="Your name" name="name" >
+                          <div class="button" value="start" id="btn1" >Next</div>
+                      </div>
+                      <div id="scroll"><a href="#newRecord">Scroll down to view the quizer records</a></div>
+
+                  </div>
+
+              </div>
+          </div>
+          <div id="step2" style="display: none;">
+              <div class="quizBody">
+                  <div class="quiz-start">
+                      <h1>Check out our <br>predefined quizzes</h1>
+
+                      <div class="quiz-options-multi">
+
+                          <input type="radio" id="php" name="tags" value="php" checked>
+                          <label for="php" class="opt">
+                              <div>php</div>
+                          </label>
+                          <input type="radio" id="JavaScript" name="tags" value="JavaScript">
+                          <label for="JavaScript" class="opt">
+                              <div>JavaScript</div>
+                          </label>
+                          <input type="radio" id="html" name="tags" value="html">
+                          <label for="html" class="opt">
+                              <div>Html</div>
+                          </label>
+
+                      </div>
+                      <div  id="btn2" value="start" class="mylink-btn w30 step-btns button">Next</div>
+
+
+
+
+
+
+                  </div>
+
+              </div>
+          </div>
+          <div id="step3" style="display: none;">
+              <div class="quizBody">
+                  <div class="quiz-start">
+                      <h1>Select difficulty level</h1>
+
+                      <div class="quiz-options-multi">
+
+
+
+                          <input type="radio" id="Easy" name="difficulity" value="easy" checked>
+                          <label for="Easy" class="opt">
+                              <div>Easy</div>
+                          </label>
+                          <input type="radio" id="Medium" name="difficulity" value="medium">
+                          <label for="Medium" class="opt">
+                              <div>Medium</div>
+                          </label>
+                          <input type="radio" id="Hard" name="difficulity" value="hard">
+                          <label for="Hard" class="opt">
+                              <div>Hard</div>
+                          </label>
+
+
+
+
+                      </div>
+                      <button type="submit"  value="start" id="btn3" class="mylink-btn w30 step-btns button">Next</button>
+
+
+
+                  </div>
+
+              </div>
+          </div>
+      </form>
+      <div id="newRecord">
+        <h3>Records<div id="bin"><img src="assets/bin.png" width="30px"></div></h3>
+      
+        <div id="records">
+
+        </div>  
+        </div>
+      </div>
+        <div id="float-number"><span id="cur-step">1</span>/5</div>
+           <div class="quizBody-all" id="playground">
+            </div>
+            <img src="assets/Ellipse 1.png" class="bg1">
+            <img src="assets/Polygon 1.png" class="bg2 pc">
+           </div>
+           <audio id="click">
+            <source src="assets/button-124476.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="success">
+            <source src="assets/success-fanfare-trumpets-6185.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="failed">
+            <source src="assets/failure-drum-sound-effect-2-7184.mp3" type="audio/mpeg">
+          </audio>
+    </main>
+    <script src="api.js"></script>
+</body>
+
+</html>
